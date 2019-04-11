@@ -5,8 +5,6 @@ class Checkout extends Component{
     componentWillUnmount() {
          if(this.refs.delivery.checked)
             this.props.substractDelivery();
-         if(this.refs.pickup.checked)
-            this.props.noPickup();
     }
     deliveryChecked = (e)=>{
         if(e.target.checked){
@@ -14,15 +12,6 @@ class Checkout extends Component{
         }
         else{
             this.props.substractDelivery();
-        }
-    }
-
-    pickupChecked = (e)=>{
-        if(e.target.checked){
-            this.props.kioskPickup();
-        }
-        else{
-            this.props.noPickup();
         }
     }
 
@@ -35,10 +24,6 @@ class Checkout extends Component{
                             <label>
                                 <input type="checkbox" ref="delivery" onChange= {this.deliveryChecked} />
                                 <span>Gate Delivery(+$6)</span>
-                            </label>
-                            <label>
-                                <input type="checkbox" ref="pickup" onChange= {this.pickupChecked} />
-                                <span>Kiosk Pickup(Free)</span>
                             </label>
                         </li>
                         <li className="collection-item"><b>Total: ${this.props.total}</b></li>

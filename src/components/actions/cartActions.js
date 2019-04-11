@@ -3,9 +3,8 @@ import { ADD_TO_CART,
          REMOVE_ITEM,
          SUB_QUANTITY,
          ADD_QUANTITY,
-         ADD_DELIVERY,
-         PICK_UP,
-         NO_PICKUP } from './action-types/cart-actions'
+         ADD_DELIVERY
+        } from './action-types/cart-actions'
 
 //add cart action
 export const addToCart= (id)=>{
@@ -39,22 +38,6 @@ export const addQuantity=(id)=>{
 export const addDelivery=(id)=>{
     return{
         type: ADD_DELIVERY,
-        id
-    }
-}
-
-//kiosk pick-up
-export const kioskPickup=(id)=>{
-    return{
-        type: PICK_UP,
-        id
-    }
-}
-
-//no kiosk pick-up
-export const noPickup=(id)=>{
-    return{
-        type: NO_PICKUP,
         id
     }
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
-import { removeItem, addQuantity, subtractQuantity, kioskPickup, noPickup } from './actions/cartActions'
+import { removeItem, addQuantity, subtractQuantity } from './actions/cartActions'
 import Checkout from './Checkout'
 class Cart extends Component{
 
@@ -75,9 +75,7 @@ const mapDispatchToProps = (dispatch)=>{
     return{
         removeItem: (id)=>{dispatch(removeItem(id))},
         addQuantity: (id)=>{dispatch(addQuantity(id))},
-        subtractQuantity: (id)=>{dispatch(subtractQuantity(id))},
-        kioskPickup: (id)=>{dispatch(kioskPickup(id))},
-        noPickup: (id)=>{dispatch(noPickup(id))}
+        subtractQuantity: (id)=>{dispatch(subtractQuantity(id))}
     }
 }
 export default connect(mapStateToProps,mapDispatchToProps)(Cart)
