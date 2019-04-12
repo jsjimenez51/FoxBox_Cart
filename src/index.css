@@ -12,7 +12,7 @@
 }
 .card .card-image .card-title{
     color: black;
-    font-weight: 400
+    font-weight: 400;
 }
 .cart{
     margin-top:40px;
@@ -23,7 +23,7 @@
 .collection-item.avatar .title {
     font-size: 20px;
     font-weight: 500;
-    color: #ee6e73;
+    color: #ff9800;
     display: block;
     margin-bottom: 20px;
     

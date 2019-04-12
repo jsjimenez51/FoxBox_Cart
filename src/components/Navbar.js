@@ -9,7 +9,6 @@ import Toolbar from '@material-ui/core/Toolbar';
 import { fade } from '@material-ui/core/styles/colorManipulator';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-// import SearchIcon from '@material-ui/icons/Search'
 
 const styles = theme => ({
     root: {
@@ -44,15 +43,6 @@ const styles = theme => ({
           width: 'auto',
         },
       },
-    //   searchIcon: {
-    //     width: theme.spacing.unit * 9,
-    //     height: '100%',
-    //     position: 'absolute',
-    //     pointerEvents: 'none',
-    //     display: 'flex',
-    //     alignItems: 'center',
-    //     justifyContent: 'left',
-    //   },
       actionFood: {
         marginLeft: '1rem',
       },
@@ -100,17 +90,19 @@ const styles = theme => ({
         <nav className={classes.root}>
         <AppBar position="static">
           <Toolbar className={classes.toolbar}>
+
+            {/* Menu Button for Future Use ie Profiles, Accounts, Etc */}
             <IconButton className={classes.menuButton} color="inherit" aria-label="Open drawer">
               <MenuIcon />
             </IconButton>
+
             <Typography className={classes.title} variant="h6" color="inherit" noWrap>
               <Link className={classes.link} to="/">Fox Box</Link>
             </Typography>
             <div className={classes.grow} />
+            
+            {/* Search Bar for Future Use ie filtering or quick search */}
             <div className={classes.search}>
-              {/* <div className={classes.searchIcon}>
-                <SearchIcon />
-              </div> */}
               <InputBase
                 placeholder="Search…"
                 classes={{
@@ -119,6 +111,8 @@ const styles = theme => ({
                 }}
               />
             </div>
+
+            {/* Action Buttons */}
             <div className={classes.actionFood}>
                 <Link className={classes.actLink} to="/"><i className="material-icons">fastfood</i></Link>
             </div>

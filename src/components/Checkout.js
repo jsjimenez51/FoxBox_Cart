@@ -5,7 +5,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 
 const styles = theme => ({
-
+// enables styling of Button feature
 });
 
 class Checkout extends Component{
@@ -22,7 +22,7 @@ class Checkout extends Component{
             this.props.substractDelivery();
         }
     }
-
+    // this creates the Checkout Box feature below the shopping cart
     render(){
         const { classes } = this.props;
         return(
