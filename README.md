@@ -1,4 +1,4 @@
-# FOXBOX! 
+# FOX BOX! 
 
 ## What is it?
 A Food Shopping Cart App built with React and Material UI
@@ -41,4 +41,4 @@ API then the options available to that item from another API.
 ---
 
 ## Author
-* Joshua Jimenez } | [jsjimenez51](https://github.com/jsjimenez51) | [@bigjoshcodes](https://twitter.com/bigjoshcodes)
+* Joshua Jimenez | [jsjimenez51](https://github.com/jsjimenez51) | [@bigjoshcodes](https://twitter.com/bigjoshcodes)
