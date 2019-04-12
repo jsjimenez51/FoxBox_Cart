@@ -1,5 +1,13 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
+
+const styles = theme => ({
+
+});
+
 class Checkout extends Component{
     
     componentWillUnmount() {
@@ -16,7 +24,7 @@ class Checkout extends Component{
     }
 
     render(){
-  
+        const { classes } = this.props;
         return(
             <div className="container">
                 <div className="collection">
@@ -28,13 +36,17 @@ class Checkout extends Component{
                         </li>
                         <li className="collection-item"><b>Total: ${this.props.total}</b></li>
                     </div>
-                    <div className="checkout">
-                        <button className="waves-effect waves-light btn">Checkout</button>
+                    <div className={classes.checkout}>
+                        <Button variant="contained" color="secondary" className={classes.button}>Checkout</Button>
                     </div>
                  </div>
         )
     }
 }
+
+Checkout.propTypes = {
+    classes: PropTypes.object.isRequired,
+};
 
 const mapStateToProps = (state)=>{
     return{
@@ -52,4 +64,4 @@ const mapDispatchToProps = (dispatch)=>{
     }
 }
 
-export default connect(mapStateToProps,mapDispatchToProps)(Checkout)
+export default withStyles(styles)(connect(mapStateToProps,mapDispatchToProps)(Checkout));

@@ -1,24 +1,44 @@
-# Basic food shopping cart app built with React and Material UI
+# FOXBOX! 
+
+## What is it?
+A Food Shopping Cart App built with React and Material UI
+
+A responsive web app that allows a user to put together a food order and then 
+view it in a shopping cart. It features a Nav/Search Bar with scalability to
+add a quick search feature & user menu in the future, as well as quick access
+buttons to the main food page and shopping cart/checkout page.  The food 
+itself is displayed on Cards that generate the main item and price from one 
+API then the options available to that item from another API. 
+
+### Built with:
+- [x] Boostrapped with Create React App to build Webpack
+- [x] React 16.8.4
+- [x] React-Redux 6.0.0
+- [x] Material UI/core 3.9.3
 
 ## Features
-* Add and remove items 
-* Remove items
-* Edit the quantity of the items in real time
-* Calculate automatically the total including the Delivery (if chosen)
+- [x] Browse all available items
+- [x] Browse item customization options if applicable
+- [x] Items displayed on Cards with drop downs to display more info
+- [x] A future use Search/Filtering Bar
+- [x] A future use Menu Stack
+- [x] Add and Remove Items from a shopping cart
+- [x] A Shopping Cart view 
+- [x] Increase and Decrease Quantities of items added to cart
+- [x] A scalable *Delivery Button that can be removed or duplicated per applicability
+- [x] Automatically calculated Total pricing of Items and optional delivery feature
 
-# Getting started
-### Requirements
+---
 
-* Node.js
-* NPM
+## Give it a try:
 
-### Package installation
-```bash
-npm install
-```
- ### Start the React App
- Excute the following command: 
-```bash
-npm start
-```
-The application will start automatically in your browser on http://localhost:3000
+- Clone or download this repository:
+  - git clone https://github.com/jsjimenez51
+- run `npm install` to install dependencies
+- run `npm start` to open on browser with localhost
+- if browser does not open visit: http://localhost:3000/ to see local rendering
+
+---
+
+## Author
+* Joshua Jimenez } | [jsjimenez51](https://github.com/jsjimenez51) | [@bigjoshcodes](https://twitter.com/bigjoshcodes)

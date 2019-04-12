@@ -6,9 +6,12 @@ import { ADD_TO_CART,
          } from '../actions/action-types/cart-actions'
 
 const itemFile = require('../../data/items.json');
+const foodOptions = require('../../data/options.json');
+
 
 const initState = {
     items: itemFile,
+    options: foodOptions,
     addedItems:[],
     total: 0
 }
