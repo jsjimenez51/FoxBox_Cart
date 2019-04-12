@@ -57,6 +57,7 @@ const styles = theme => ({
 
  class Home extends Component{
     
+    // On Click Functionalities
     handleAddToClick = (id)=>{
         this.props.addToCart(id); 
     }
@@ -68,12 +69,13 @@ const styles = theme => ({
 
     render(){
         const { classes, itemOptions } = this.props;
-
+        // Card Rendering for each Item & Option found here
         let itemList = this.props.items.map(item=>{
             const optionList = itemOptions[0][item["item_id"]]
     
        
             return(
+                // Card can be broken out into its own component in future
                 <Card className={classes.card}>
                      
                      {/* {options.map(thing => console.log(thing[item["item_id"]]))} */}
@@ -88,6 +90,7 @@ const styles = theme => ({
                     />
                     <CardContent>
                     <Typography component="p">
+                        {/* Hard Coded currency value can be scaled with Currency Library in future */}
                         <b>Price: ${(item.price.base_unit / (Math.pow(10, 2))).toFixed(2)}</b>
                     </Typography>
                     </CardContent>
@@ -95,6 +98,7 @@ const styles = theme => ({
                     <IconButton aria-label="Add to cart">
                         <AddShopping onClick={()=>{this.handleAddToClick(item.item_id)}}/>
                     </IconButton>
+                    {/* Card Expansion Feature here */}
                     <IconButton
                         className={classnames(classes.expand, {
                         [classes.expandOpen]: this.state.expanded,
@@ -112,15 +116,13 @@ const styles = theme => ({
                         <Typography paragraph>
                             {item.description}
                         </Typography>
+                        {/* FoodOptions component used here */}
                         <FoodOptions options={optionList}></FoodOptions>   
                     </CardContent>
                     </Collapse>
                 </Card>
             )
         })
-
-
-
 
         return(
 

@@ -9,7 +9,7 @@ const styles = theme => ({
 });
 
 class Checkout extends Component{
-    
+    // Delivery checkbox functionality
     componentWillUnmount() {
          if(this.refs.delivery.checked)
             this.props.substractDelivery();

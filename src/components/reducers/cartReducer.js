@@ -5,10 +5,11 @@ import { ADD_TO_CART,
          ADD_DELIVERY
          } from '../actions/action-types/cart-actions'
 
+// Food & Option APIs
 const itemFile = require('../../data/items.json');
 const foodOptions = require('../../data/options.json');
 
-
+//  Initial State of imported Items in Store
 const initState = {
     items: itemFile,
     options: foodOptions,

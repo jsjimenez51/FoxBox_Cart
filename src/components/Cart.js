@@ -17,6 +17,7 @@ class Cart extends Component{
     handleSubtractQuantity = (id)=>{
         this.props.subtractQuantity(id);
     }
+    // Creates the Shopping cart feature here
     render(){
               
         let addedItems = this.props.items.length ?
