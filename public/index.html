@@ -23,8 +23,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
 
     <title>Fox Box</title>
   </head>
@@ -35,3 +33,18 @@
     <div id="root"></div>            
   </body>
 </html>
+
+  <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAk33QoMt3haCyejK_mHe1CrTmsa-WH5oQ",
+      authDomain: "fox-box-shopping-cart.firebaseapp.com",
+      databaseURL: "https://fox-box-shopping-cart.firebaseio.com",
+      projectId: "fox-box-shopping-cart",
+      storageBucket: "",
+      messagingSenderId: "104303837383"
+    };
+    firebase.initializeApp(config);
+  </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
