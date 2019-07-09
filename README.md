@@ -11,6 +11,9 @@ buttons to the main food page and shopping cart/checkout page. The food
 itself is displayed on Cards that generate the main item and price from one
 API then the options available to that item from another API.
 
+## View Here:
+https://fox-box-shopping-cart.web.app/
+
 ### Built with:
 
 - React 16.8.4
@@ -45,5 +48,9 @@ API then the options available to that item from another API.
 ---
 
 ## Author
+<<<<<<< HEAD
 
 - Joshua Jimenez | [Personal Site: bigjoshcodes.dev](https://bigjoshcodes.dev) | [Github: jsjimenez51](https://github.com/jsjimenez51) | [Twitter: @bigjoshcodes](https://twitter.com/bigjoshcodes)
+=======
+* Joshua Jimenez | [jsjimenez51](https://github.com/jsjimenez51) | [@bigjoshcodes](https://twitter.com/bigjoshcodes)
+>>>>>>> 3f71226b0f4f66aadfc9900c04b856c9751aac66
